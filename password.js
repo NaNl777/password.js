@@ -18,7 +18,7 @@ function generatePassword(length, level, value = 1) {
     }
       else if (level === 'medium') {
        
-        for(let i = 0; i < length; i++) {
+        for(let j = 0; j < length; j++) {
             const randomAlDigits = alphabet.concat(digits)
             let onenSymbol = randomAlDigits.charAt([Math.floor(Math.random() * randomAlDigits.length)]);
             newPassword += onenSymbol;
@@ -26,7 +26,7 @@ function generatePassword(length, level, value = 1) {
     } 
       else if (level === 'hard') {
         
-        for(let i = 0; i < length; i++) {
+        for(let v = 0; v < length; v++) {
             const randomAlDigSymbol = alphabet.concat(digits, symbols)
             let onenSymbol = randomAlDigSymbol.charAt([Math.floor(Math.random() * randomAlDigSymbol.length)]);
              newPassword += onenSymbol;
